@@ -59,7 +59,7 @@
             margin-bottom: 4px;
 
         }
-        .input{
+        .value{
             background-color: var(--text-input-field);
             border: none;
             border-radius: 8px;
@@ -68,10 +68,8 @@
             padding: 6px;
             margin-bottom: 12px;
         }
-        .input-name,.input-email,.input-password{
-            margin-bottom: 22px;
-
-        }
+        
+        
         .form{
             display: flex;
             flex-direction: column;
@@ -81,15 +79,16 @@
             flex-direction: column;
         }
         .primary-button{
-            background: var(--hospital-green);
+            background: var(--white);
             border-radius: 8px;
-            border: none;
-            color: var(--white);
+            border-color: var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
             font-weight: bold;
             height: 50px;
+            border: solid;
         }
         .login-button{
             margin-top: 14px;
@@ -117,14 +116,14 @@
             <form action="/" class="form">
                 <div>
                     <label for="name" class="label">Nombre</label>
-                    <input type="text" id="name" placeholder="Ilvar Camelo" class="input-name">
+                    <p class="value">Nombre</p>
                     <label for="email" class="label">Email</label>
-                    <input type="text" id="email" placeholder="ilvar@example.com" class="input-email">
+                    <p class="value">Email</p>
                     <label for="password" class="label">Contraseña</label>
-                    <input type="password" id="password" placeholder="**********" class="input-password">
+                    <p class="value">*********</p>
                     
                 </div>
-                <input type="submit" value="Crear cuenta" class="primary-button login-button">
+                <input type="submit" value="Editar cuenta" class="primary-button login-button">
             </form>
 
         </div>
